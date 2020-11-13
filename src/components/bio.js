@@ -19,6 +19,13 @@ const Bio = () => {
           }
         }
       }
+      twitter: file(absolutePath: { regex: "/twitter.png/" }) {
+        childImageSharp {
+          fixed(width: 24, height: 24, quality: 95) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
       site {
         siteMetadata {
           author {
@@ -38,6 +45,7 @@ const Bio = () => {
   const social = data.site.siteMetadata?.social
 
   const avatar = data?.avatar?.childImageSharp?.fixed
+  const twitter = data?.twitter?.childImageSharp?.fixed
 
   return (
     <div className="bio">
@@ -53,10 +61,10 @@ const Bio = () => {
       )}
       {author?.name && (
         <p>
-          Written by <strong>{author.name}</strong> {author?.summary || null}
-          {` `}
+          <strong>{author.name}</strong> {author?.summary || null}
+          <br />
           <a href={`https://twitter.com/${social?.twitter || ``}`}>
-            You should follow them on Twitter
+            <Image fixed={twitter} alt={social?.twitter} />
           </a>
         </p>
       )}
