@@ -5,10 +5,11 @@ import Bio from '../components/bio'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 
-const Container = ({ location, siteTitle, pageTitle }) => (
+const Container = ({ location, siteTitle, pageTitle, children }) => (
   <Layout location={location} title={siteTitle}>
     <SEO title={pageTitle} />
     <Bio />
+    {children}
   </Layout>
 )
 
