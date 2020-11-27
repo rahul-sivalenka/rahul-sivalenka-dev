@@ -1,9 +1,9 @@
-import { graphql, Link } from "gatsby"
-import React from "react"
+import { graphql, Link } from 'gatsby'
+import React from 'react'
 
-import Bio from "../components/bio"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Bio from '../components/bio'
+import Layout from '../components/layout'
+import SEO from '../components/seo'
 
 const Container = ({ location, siteTitle, pageTitle }) => (
   <Layout location={location} title={siteTitle}>
@@ -15,7 +15,7 @@ const Container = ({ location, siteTitle, pageTitle }) => (
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title
   const posts = data.allMarkdownRemark.nodes
-  const pageTitle = "WIP"
+  const pageTitle = 'WIP'
 
   if (posts.length === 0) {
     return (
