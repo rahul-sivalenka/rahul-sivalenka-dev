@@ -8,7 +8,7 @@ module.exports = {
     description: `My Notes.`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`,
     social: {
-      twitter: `rahul_sivalenka`,
+      twitter: `rahulsivalenka`,
     },
   },
   plugins: [
