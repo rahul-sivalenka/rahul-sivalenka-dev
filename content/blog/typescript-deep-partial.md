@@ -46,7 +46,7 @@ The following is a generic type which can be used to make any nested object type
 
 ```typescript
 type DeepPartial<T> = {
-  [P in keyof T]?: DeepPartial<T[P]>;
+  [propertyKey in keyof T]?: DeepPartial<T[propertyKey]>;
 };
 
 const deepPartialTheme: DeepPartial<Theme> = {
@@ -60,6 +60,28 @@ const deepPartialTheme: DeepPartial<Theme> = {
 
 See playground [here](https://www.typescriptlang.org/play?#code/JYOwLgpgTgZghgYwgAgCoAsIFsUG8BQyyAJsFBAmMAPYgBcyA5ADZhSPIA+TUYzjAbkLIE1ZtSgMCRIgAcowLHCgBPBgGc2oAOZCZydRVrFlag1pC7hRSAA8wGi1aIBffG-xgVslABEIELIACspUcMwAPKgAf
 MgAvMjSyADaQcigyADWECrUMGgAugD8DP6BIbzA4VGpBdFCLkL4oiCaJAHBoVXMGNgQpR0VYZG9OLEJSaTklDT0PHyMADTCouKSidbI8oqmDIwAxAgIAOwAzACsAIyMwm4uQA).
+
+### Breakdown
+
+* Define a generic type which accepts other type as argument
+  
+  ```typescript
+  type DeepPartial<T> // ...
+  ```
+*  Extract properties of type passed in using `keyof` and `in` operators, and mark that property as optional using [`?`](https://www.typescriptlang.org/docs/handbook/2/objects.html#optional-properties)
+  
+  ```typescript
+  {
+    [propertyKey in keyof T]?: // ...;
+  }
+  ```
+*  Finally, use `DeepPartial` recursively to make nested object properties as optional. Note here that the inner property type is being extracted using property key (`propertyKey`) and box notation (`T[propertyKey]`)
+  
+  ```typescript
+  type DeepPartial<T> = {
+    [propertyKey in keyof T]?: DeepPartial<T[propertyKey]>;
+  }
+  ```
 
 ## References
 
