@@ -19,26 +19,27 @@
 </svelte:head>
 
 <div class="content">
-	<h1>About this app</h1>
+	<h1>About Me</h1>
 
 	<p>
-		This is a <a href="https://kit.svelte.dev">SvelteKit</a> app. You can make your own by typing the
-		following into your command line and following the prompts:
+		Hey! I am <b>Phani Rahul Sivalenka</b> (or simply <b>Rahul</b>).
 	</p>
 
-	<!-- TODO lose the @next! -->
-	<pre>npm init svelte@next</pre>
+	<p>I'm a former electrical engineer and a current full stack developer from Hyderabad, India.</p>
 
 	<p>
-		The page you're looking at is purely static HTML, with no client-side interactivity needed.
-		Because of that, we don't need to load any JavaScript. Try viewing the page's source, or opening
-		the devtools network panel and reloading.
+		Currently working on ReactJS. Although, I am interested to learn anything web related. My work
+		so far involved this major stack: Angular, ReactJS, .Net and NodeJS.
 	</p>
 
+	<p>On the way to learn Svelte and Java.</p>
+
 	<p>
-		The <a href="/todos">TODOs</a> page illustrates SvelteKit's data loading and form handling. Try using
-		it with JavaScript disabled!
+		I love to explore and experiment with any new tech and am constantly on the look out for new
+		updates in the industry.
 	</p>
+
+	<p>I love to teach. My teaching as of now is limited to co-workers and friends.</p>
 </div>
 
 <style>
