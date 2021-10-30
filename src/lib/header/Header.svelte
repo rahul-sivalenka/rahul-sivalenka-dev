@@ -1,6 +1,10 @@
 <script lang="ts">
 	import { page } from '$app/stores';
 	import logo from './svelte-logo.svg';
+	import github from './github.svg';
+	import twitter from './twitter.svg';
+	import linkedin from './linkedin.svg';
+	import SocialIcon from '$lib/SocialIcon.svelte';
 </script>
 
 <header>
@@ -25,7 +29,23 @@
 	</nav>
 
 	<div class="corner">
-		<!-- TODO put something else here? github link? -->
+		<SocialIcon
+			icon={github}
+			link="https://github.com/rahulsivalenka"
+			tooltip="rahulsivalenka@github"
+		/>
+
+		<SocialIcon
+			icon={twitter}
+			link="https://twitter.com/rahulsivalenka"
+			tooltip="rahulsivalenka@twitter"
+		/>
+
+		<SocialIcon
+			icon={linkedin}
+			link="https://linkedin.com/in/rahulsivalenka"
+			tooltip="rahulsivalenka@linkedin"
+		/>
 	</div>
 </header>
 
