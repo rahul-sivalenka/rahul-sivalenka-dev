@@ -19,12 +19,16 @@
 			</picture>
 		</div>
 
-		to your new<br />SvelteKit app
+		I'm Rahul
 	</h1>
 
 	<h2>
-		try editing <strong>src/routes/index.svelte</strong>
+		This is my personal website being built using <a href="https://kit.svelte.dev/" target="_blank"
+			>SvelteKit</a
+		>.
 	</h2>
+
+	<p>This is a work in progress. Know more about me <a href="/about">here</a>.</p>
 
 	<Counter />
 </section>
