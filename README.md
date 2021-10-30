@@ -36,3 +36,8 @@ npm run build
 ```
 
 > You can preview the built app with `npm run preview`, regardless of whether you installed an adapter. This should _not_ be used to serve your app in production.
+
+## Tools that helped me
+
+* [iconmonstr](https://iconmonstr.com/)
+* [CSS Filter Generator - By Barrett Sonntag](https://codepen.io/sosuke/pen/Pjoqqp)

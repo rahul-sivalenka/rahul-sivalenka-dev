@@ -24,7 +24,6 @@
 	}
 
 	a:hover {
-		/* tool: https://codepen.io/sosuke/pen/Pjoqqp */
 		filter: invert(32%) sepia(94%) saturate(3150%) hue-rotate(357deg) brightness(103%) contrast(99%);
 	}
 </style>
