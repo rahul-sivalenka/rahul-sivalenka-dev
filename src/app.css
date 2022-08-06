@@ -1,6 +1,10 @@
 @import 'normalize.css';
 @import '@fontsource/space-mono';
 
+html {
+	height: -webkit-fill-available;
+}
+
 body {
 	font-family: 'Space Mono', monospace;
 }
