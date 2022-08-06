@@ -15,7 +15,10 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		height: 100vh;
+		/* Fix for mobile browser overflowing viewport when height is set to 100vh
+		Ref: https://css-tricks.com/css-fix-for-100vh-in-mobile-webkit/ */
+		min-height: 100vh;
+		min-height: --webkit-fill-available;
 		background-color: burlywood;
 	}
 
