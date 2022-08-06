@@ -2,35 +2,11 @@
 	export const prerender = true;
 </script>
 
-<script lang="ts">
-	import Counter from '$lib/Counter.svelte';
-</script>
-
-<svelte:head>
-	<title>Home</title>
-</svelte:head>
-
 <section>
+	<p>Hey I'm</p>
 	<h1>
-		<div class="welcome">
-			<picture>
-				<source srcset="svelte-welcome.webp" type="image/webp" />
-				<img src="svelte-welcome.png" alt="Welcome" />
-			</picture>
-		</div>
-
-		I'm Rahul
+		Rahul
 	</h1>
-
-	<h2>
-		This is my personal website being built using <a href="https://kit.svelte.dev/" target="_blank"
-			>SvelteKit</a
-		>.
-	</h2>
-
-	<p>This is a work in progress. Know more about me <a href="/about">here</a>.</p>
-
-	<Counter />
 </section>
 
 <style>
@@ -39,25 +15,22 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		flex: 1;
+		height: 100vh;
+		background-color: burlywood;
 	}
 
+	h1, p {
+		margin: 0;
+	}
+
+	p {
+		transform: translateX(-100%);
+		font-size: 1.5rem;
+		font-style: italic;
+	}
+	
 	h1 {
-		width: 100%;
-	}
-
-	.welcome {
-		position: relative;
-		width: 100%;
-		height: 0;
-		padding: 0 0 calc(100% * 495 / 2048) 0;
-	}
-
-	.welcome img {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		top: 0;
-		display: block;
+		font-size: 4rem;
+		font-weight: bold;
 	}
 </style>

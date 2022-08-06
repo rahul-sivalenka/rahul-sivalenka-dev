@@ -1,45 +1,12 @@
 <script lang="ts">
-	import Header from '$lib/header/Header.svelte';
 	import '../app.css';
 </script>
 
-<Header />
+<svelte:head>
+	<title>Rahul | Phani Rahul Sivalenka | Fullstack Dev</title>
+	<meta name="description" content="Phani Rahul Sivalenka's personal website." />
+</svelte:head>
 
 <main>
 	<slot />
 </main>
-
-<footer>
-	<p>Phani Rahul Sivalenka © 2021</p>
-</footer>
-
-<style>
-	main {
-		flex: 1;
-		display: flex;
-		flex-direction: column;
-		padding: 1rem;
-		width: 100%;
-		max-width: 1024px;
-		margin: 0 auto;
-		box-sizing: border-box;
-	}
-
-	footer {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		padding: 40px;
-	}
-
-	footer a {
-		font-weight: bold;
-	}
-
-	@media (min-width: 480px) {
-		footer {
-			padding: 40px 0;
-		}
-	}
-</style>
