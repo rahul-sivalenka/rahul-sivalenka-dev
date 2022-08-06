@@ -36,6 +36,7 @@
 	"dependencies": {
 		"@fontsource/space-mono": "^4.5.8",
 		"cookie": "^0.4.1",
-		"normalize.css": "^8.0.1"
+		"normalize.css": "^8.0.1",
+		"party-js": "^2.2.0"
 	}
 }

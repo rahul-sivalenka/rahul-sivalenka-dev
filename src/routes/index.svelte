@@ -1,12 +1,18 @@
 <script context="module" lang="ts">
+import Titbit from '$lib/Titbit.svelte';
+
 	export const prerender = true;
 </script>
 
 <section>
 	<p>Hey I'm</p>
-	<h1>
-		Rahul
-	</h1>
+
+	<Titbit>
+		<h1>
+			Rahul
+		</h1>
+	</Titbit>
+
 </section>
 
 <style>
